@@ -7,6 +7,34 @@
 </head>
 
 <body>
+
+	<div>
+		<input type="number" name="game-number" id="game-number" data-ns-test="game-number">
+		<button id="play-game" data-ns-test="play-game">Play</button>
+	</div>
+
+	<div>
+		<br>
+		<button id="rock" data-ns-test="rock" style="display: none;">Rock</button>
+		<button id="paper" data-ns-test="paper" style="display: none;">Paper</button>
+		<button id="scissors" data-ns-test="scissors" style="display: none;">Scissors</button>
+		<br>
+	</div>
+
+	<div>
+		<p id="computer-choose" data-ns-test="computer-choose" style="display: none;">Computer: <span id="computer-choose-1"> </span> </p>
+		<div data-ns-test="round-result" id="round-result" style="display: none;">Round Result: <span id="round-result-1"></span> </div>
+	</div>
+
+	<div>
+		<br>
+		<div id="user-points" data-ns-test="user-points" style="display: none;">User Points: <span id="user-points-1"></span> </div>
+		<div id="computer-points" data-ns-test="computer-points" style="display: none;"> Computer Points: <span id="computer-points-1"></span> </div>
+		<div id="rounds-left" data-ns-test="rounds-left" style="display: none;"> Round Left: <span id="rounds-left-1"></span> </div>
+		<br>
+		<div id="game-result" data-ns-test="game-result" style="display: none;">Game Result: </div>
+	</div>
+
 	<!-- the entire body must be written by student -->
     <script type="text/javascript" src="./script.js">
 </script>
