@@ -41,18 +41,18 @@ function play() {
 
         function rockR() {
             if (gameNumber.value > 0) {
-                var choices = ["rock", "paper", "scissors"]
+                var choices = ["ROCK", "PAPER", "SCISSORS"]
                 var computerChoose = Math.floor(Math.random() * choices.length)
                 var randomComputerChoose = choices[computerChoose]
-                if (randomComputerChoose == 'rock') {
+                if (randomComputerChoose == 'ROCK') {
                     RR = 'TIE'
                 }
-                else if (randomComputerChoose == 'paper') {
-                    RR = 'Computer Won'
+                else if (randomComputerChoose == 'PAPER') {
+                    RR = 'Computer WON'
                     computerPoints++
                 }
                 else {
-                    RR = "You Won"
+                    RR = "You WON"
                     userPoints++
                 }
                 computerC1.innerText = "  " + randomComputerChoose
@@ -64,10 +64,10 @@ function play() {
                 if (gameNumber.value == 0) {
                     gameResult.style.display = "block"
                     if (computerPoints > userPoints) {
-                        gameResult.innerText = "Game Result: Computer Won"
+                        gameResult.innerText = "Game Result: Computer WON"
                     }
                     else if (userPoints > computerPoints) {
-                        gameResult.innerText = "Game Result: User Won"
+                        gameResult.innerText = "Game Result: User WON"
                     }
                     else {
                         gameResult.innerText = "Game Result: TIE"
@@ -81,18 +81,18 @@ function play() {
 
         function paperP() {
             if (gameNumber.value > 0) {
-                var choices = ["rock", "paper", "scissors"]
+                var choices = ["ROCK", "PAPER", "SCISSORS"]
                 var computerChoose = Math.floor(Math.random() * choices.length)
                 var randomComputerChoose = choices[computerChoose]
-                if (randomComputerChoose == 'rock') {
-                    RR = 'You Won'
+                if (randomComputerChoose == 'ROCK') {
+                    RR = 'You WON'
                     userPoints++
                 }
-                else if (randomComputerChoose == 'paper') {
+                else if (randomComputerChoose == 'PAPER') {
                     RR = 'TIE'
                 }
                 else {
-                    RR = "Computer Won"
+                    RR = "Computer WON"
                     computerPoints++
                 }
                 computerC1.innerText = "  " + randomComputerChoose
@@ -104,10 +104,10 @@ function play() {
                 if (gameNumber.value == 0) {
                     gameResult.style.display = "block"
                     if (computerPoints > userPoints) {
-                        gameResult.innerText = "Game Result: Computer Won"
+                        gameResult.innerText = "Game Result: Computer WON"
                     }
                     else if (userPoints > computerPoints) {
-                        gameResult.innerText = "Game Result: User Won"
+                        gameResult.innerText = "Game Result: User WON"
                     }
                     else {
                         gameResult.innerText = "Game Result: TIE"
@@ -121,18 +121,18 @@ function play() {
 
         function scissorsS() {
             if (gameNumber.value > 0) {
-                var choices = ["rock", "paper", "scissors"]
+                var choices = ["ROCK", "PAPER", "SCISSORS"]
                 var computerChoose = Math.floor(Math.random() * choices.length)
                 var randomComputerChoose = choices[computerChoose]
-                if (randomComputerChoose == 'paper') {
-                    RR = 'You Won'
+                if (randomComputerChoose == 'PAPER') {
+                    RR = 'You WON'
                     userPoints++
                 }
-                else if (randomComputerChoose == 'scissors') {
+                else if (randomComputerChoose == 'SCISSORS') {
                     RR = 'TIE'
                 }
                 else {
-                    RR = "Computer Won"
+                    RR = "Computer WON"
                     computerPoints++
                 }
                 computerC1.innerText = "  " + randomComputerChoose
@@ -144,10 +144,10 @@ function play() {
                 if (gameNumber.value == 0) {
                     gameResult.style.display = "block"
                     if (computerPoints > userPoints) {
-                        gameResult.innerText = "Game Result: Computer Won"
+                        gameResult.innerText = "Game Result: Computer WON"
                     }
                     else if (userPoints > computerPoints) {
-                        gameResult.innerText = "Game Result: User Won"
+                        gameResult.innerText = "Game Result: User WON"
                     }
                     else {
                         gameResult.innerText = "Game Result: TIE"
@@ -163,3 +163,7 @@ function play() {
 }
 
 playBtn.onclick = play;
+
+
+
+
